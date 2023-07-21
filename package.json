@@ -1,0 +1,25 @@
+{
+  "name": "catsofhyattsville-website",
+  "version": "1.0.0",
+  "description": "read me file",
+  "main": "./script/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.373.0",
+    "@aws-sdk/lib-storage": "^3.373.0",
+    "aws-sdk": "^2.1418.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "formidable": "^3.5.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1"
+  }
+}
