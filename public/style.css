@@ -1,0 +1,66 @@
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background-size:cover;
+    position:relative;
+}
+
+.card-img-top{
+    height: 30vh;
+    width:auto;
+    object-fit: contain;
+}
+
+
+.background-container {
+  /* Set initial background image */
+  background-image: url('images/cat-images/Isabelle_header.jpg');
+  /* Position and sizing of the container */
+  position: relative;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  height:100vh;
+  /* Add other styles for the container if needed */
+  /* Ensure the container covers the entire section */
+  z-index: -1;
+  /* Apply CSS transition for smooth background change */
+  transition: opacity 1s ease;
+  /* Set initial opacity to fully visible */
+  opacity: 1;
+  background-size: cover;
+}
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;}
+.imageAboutPage {
+    width: 75%;
+}
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+.slide-image {
+    opacity: 0; /* Initially set the image to be invisible */
+    transform: translateX(-100%); /* Initially position the image outside the screen to the left */
+    transition: opacity 0.5s, transform 1s; /* Add a smooth transition effect */
+  }

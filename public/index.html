@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-catsofhyattsville</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- main banner -->
+<section class="bgimage" id="home">
+    <div class="background-container">
+      <!-- Your existing content here -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Cats of Hyattsville</h2>
+            <p class="hero_desc">Dan Ebisawa's Portfolio Website</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> My name is Dan Ebisawa and I graduated from University of Maryland Baltimore County, with double major in Biological Science
+                        and Bioinformatics. I am creating this website to be my portfolio webpage and track who actually looked at my website.
+                        I am pursuing a Master's degree in IT: Database Management Systems from University of Maryland Global Campus.                      
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Dan Ebisawa</li>
+                                <li>Hobby: Buy Sneakers</li>
+                                <li>Skill: Python, C++, SQL, HTML, CSS, javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> This website will be hosted using S3 bucket on an EC2 instance. I hope this website will help me get hired.
+                            Please Hire me!!
+                            I will be updating the website so that I can have a good portfolio to showcase employers.
+                        </p>
+                        <div class="row mt-3">
+                            <p>
+                                In the mean time, I will be uploading pictures of stray cats that I adore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!-- portfolio section-->
+<section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-lg-4 mt-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="images/resume_parser.png" alt="Card image">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">Resume Parser</h4>
+                        <p class="card-text">This website parses your resume and replicate ATS system. It will identify your skills and years of experience. 
+                        </p>
+                        <div class="card-footer text-center mt-auto">
+                            <a href="resume-parser/index.html" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="images/cat_e_commerce_header.jpg" alt="Card image">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">Cat Picture E-commerce</h4>
+                        <p class="card-text">This is a e-commerce website that will be used to sell cat pictures</p>
+                        <div class="card-footer text-center mt-auto">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card h-100 portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">ClickStream Analizer</h4>
+                        <p class="card-text">Data engineer project to analyze clickstream of this website. Uses ETL pipeline to feed in data to MongoDB</p>
+                        <div class="text-center card-footer mt-auto">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+</section>
+<!--contact section-->
+<section id="contact">
+    <div class="container mt-4 pt-4 mb-4">
+        <h1 class="text-center">Contact</h1>
+        <div class="row">
+            <div class = "col">
+                <img id="slideImage" src="images/Dan_Ebisawa_Resume.jpg" class="img-fluid slide-image" style="max-width: 75%;" alt="Resume Image">
+            </div>
+            <div class="col-lg-4">
+            <div class="card" id="movingCard">
+                <div class="card-body">
+                  <h5 class="card-title">Click Here to Download</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="images/Dan_Ebisawa_Resume.jpg" class="card-link" download>Download</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+     
+</body>
+
+</html>
